@@ -23,7 +23,7 @@ public class CsvObject {
 
 	private String formatRowToString(String[] row) {
 		StringBuilder rowStringBuilder = new StringBuilder();
-		for (int i = 0; i < row.length - 2; i++) {
+		for (int i = 0; i < row.length - 1; i++) {
 			rowStringBuilder.append(row[i] + ", ");
 		}
 		rowStringBuilder.append(row[row.length - 1]);
